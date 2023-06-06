@@ -18,7 +18,7 @@ function About() {
           <Link className="link" to="/">
             <h2>HOME</h2>
           </Link>
-          <h2>EDITS</h2>
+          <h2><s class="strikethrough">EDITS</s></h2>
           <Link className="link" to="/contact">
             <h2>CONTACT</h2>
           </Link>
