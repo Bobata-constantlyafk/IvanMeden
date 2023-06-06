@@ -1,0 +1,124 @@
+.whole-page {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.da-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.tv-static {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 5);
+
+}
+
+
+.tv-static video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    animation: staticEffect 5s infinite;
+}
+
+@keyframes staticEffect {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ivan {
+    width: 35vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    align-self: start;
+    color: white;
+    font-family: 'DJGROSS';
+    text-align: end;
+    text-shadow:
+        -8px -8px 0 blue,
+        8px -8px 0 red,
+        -8px 8px 0 red,
+        8px 8px 0 red;
+    margin-right: 3vw;
+    margin-top: -3vw;
+}
+
+.menu {
+    align-self: end;
+    color: white;
+    text-align: left;
+    font-size: 1.8vw;
+    font-family: 'Roboto mono', 'DJGROSS', 'Hacked';
+    margin-left: 1vw;
+    font-weight: 100;
+}
+
+.medec {
+    font-size: 4.5vw;
+}
+
+.current {
+    color: yellow;
+}
+
+.menu h2.current::before {
+    content: "/";
+    animation: caretAnimation 1s infinite;
+}
+
+@keyframes caretAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,212 @@
+.phone-view {
+    position: relative;
+    max-width: 40vw;
+    max-height: 40vw;
+    margin: 0 auto;
+    border: 3px solid white;
+    align-self: center;
+}
+
+.phone-view::before {
+    content: "";
+    filter: blur(1.5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #55e24b;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.816) 0.5px, transparent 0.5px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.816) 0.5px, transparent 0.5px);
+    background-size: 8px 8px;
+    z-index: -1;
+}
+
+.bateriq {
+    width: 10vw;
+    height: 10vw;
+}
+
+.header {
+    padding-bottom: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 8fr 1fr;
+    background-color: #55e24b;
+    background-size: 8px 8px;
+    z-index: -1;
+}
+
+.header::before {
+    filter: blur(1.5px);
+}
+
+.header-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.signal-top {
+    justify-items: end;
+}
+
+.signal-1 {
+    margin-top: 0.4vw;
+    background-color: #000;
+    width: 3.5vw;
+    height: 0.4vw;
+}
+
+.signal-2 {
+    background-color: #000;
+    width: 2.8vw;
+    height: 0.4vw;
+    margin-top: 0.4vw;
+}
+
+.signal-3 {
+    background-color: #000;
+    width: 2.1vw;
+    height: 0.4vw;
+    margin-top: 0.4vw;
+}
+
+.signal-4 {
+    background-color: #000;
+    width: 1.4vw;
+    height: 0.4vw;
+    margin-top: 0.4vw;
+}
+
+.signal-5 {
+    background-color: #000;
+    width: 0.7vw;
+    height: 0.4vw;
+    margin-top: 0.4vw;
+}
+
+.signal-bot {
+    align-self: end;
+}
+
+.contacts {
+    font-size: 2.5rem;
+}
+
+.hour {
+    top: 10;
+    justify-self: end;
+    margin-right: 1vw;
+    font-size: 2rem;
+    margin-bottom: -1vw;
+}
+
+.battery {
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+    height: 90%;
+    width: 60%;
+    position: relative;
+}
+
+.rectangle {
+    height: 80%;
+    width: 1.5vw;
+    background-color: transparent;
+    border: 3px solid black;
+    margin-top: 1vw;
+    position: relative;
+    /* Add position relative to the rectangle */
+}
+
+.square {
+    position: absolute;
+    align-content: end;
+    left: 33%;
+    height: 0.5vw;
+    width: 0.6vw;
+    background-color: black;
+    margin-top: 0.5vw;
+}
+
+.rectangle-red {
+    position: absolute;
+    margin-top: -0.9vw;
+    height: 0.6vw;
+    margin-left: 0.3vw;
+    width: 1.2vw;
+    background-color: red;
+    animation: blink 3s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.line {
+    margin-bottom: 0.5vw;
+    align-self: end;
+    margin-left: 0.5vw;
+    width: 95%;
+    height: 20%;
+    background-color: #000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5vw;
+    padding: 0.5vw;
+}
+
+.grid-item {
+    background-color: transparent;
+    padding: 4vw;
+    text-align: center;
+    font-size: 1vw;
+    color: #55e24b;
+}
+
+.icon {
+    align-self: center;
+    justify-self: center;
+    height: 70%;
+    width: 70%;
+    /* border: 1px solid yellow; */
+}
+
+.phone {
+    height: 70%;
+    width: 70%;
+}
+
+.fb {
+    height: 90%;
+    width: 90%;
+    border: 0;
+}
+
+.email {
+    height: 100%;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}

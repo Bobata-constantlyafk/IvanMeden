@@ -1,0 +1,64 @@
+.torn-sheet {
+    display: flex;
+    align-items: center
+}
+
+.paper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+    width: 30vw;
+    background: white;
+    background: linear-gradient(to right, transparent 0, transparent 1vw, white 1vw);
+}
+
+.lines {
+    height: calc(100% - 2vw);
+    background-image: repeating-linear-gradient(white 0px, white 2.4vw, black 2.5vw);
+}
+
+.torn-paper {
+    position: relative;
+    height: 100%;
+    margin-left: -1.75vw;
+    /* Adjust this value as needed */
+}
+
+.torn-paper img {
+    height: 100%;
+}
+
+.tape {
+    position: absolute;
+    height: 6%;
+    top: 4.2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 96%;
+}
+
+.text {
+    line-height: 2.5vw;
+    color: black;
+    font-size: 1.5vw;
+    text-align: left;
+    overflow: hidden;
+    outline: none;
+    margin-left: 1vw;
+    margin-right: 1.5vw;
+    font-family: 'Rock Salt', 'Courier New', Courier, monospace;
+}
+
+.text h2 {
+    font-size: 3vw;
+}
+
+.text-2 {
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
