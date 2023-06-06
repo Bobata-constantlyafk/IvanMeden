@@ -9,7 +9,7 @@ import lin from '../../images/lin.png';
 import phone from '../../images/phone.png'
 import email from '../../images/email.png'
 import bird from '../../images/bird.png'
-import battery from '../../images/batteryFlip.mp4';
+// import battery from '../../images/batteryFlip.mp4';
 
 function Contact() {
   return (
