@@ -23,18 +23,20 @@
     z-index: -1;
 }
 
-.bateriq {
-    width: 10vw;
-    height: 10vw;
+.battery {
+    grid-column-start: 4;
+    width: 2vw;
+    height: 3vw;
 }
 
 .header {
-    padding-bottom: 1vw;
+    padding-top: 0.5vw;
     display: grid;
     grid-template-columns: 1fr 2fr 8fr 1fr;
-    background-color: #55e24b;
+    background-color: #6eaf41;
     background-size: 8px 8px;
     z-index: -1;
+    border-bottom: solid 2px black;
 }
 
 .header::before {
@@ -48,124 +50,44 @@
 }
 
 .signal-top {
-    justify-items: end;
-}
+    margin-left: 0.5vw;
+    grid-column-start: 1;
+    /* grid-row: 1 / span 2; */
+  }
 
-.signal-1 {
-    margin-top: 0.4vw;
-    background-color: #000;
-    width: 3.5vw;
-    height: 0.4vw;
-}
-
-.signal-2 {
-    background-color: #000;
-    width: 2.8vw;
-    height: 0.4vw;
-    margin-top: 0.4vw;
-}
-
-.signal-3 {
-    background-color: #000;
-    width: 2.1vw;
-    height: 0.4vw;
-    margin-top: 0.4vw;
-}
-
-.signal-4 {
-    background-color: #000;
-    width: 1.4vw;
-    height: 0.4vw;
-    margin-top: 0.4vw;
-}
-
-.signal-5 {
-    background-color: #000;
-    width: 0.7vw;
-    height: 0.4vw;
-    margin-top: 0.4vw;
-}
+  .signal-img {
+    width: 130%;
+    height: 80%; /* Set the height to 100% to span the entire parent */
+  }
 
 .signal-bot {
     align-self: end;
 }
 
 .contacts {
-    font-size: 2.5rem;
+    margin-left: 1vw;
+    font-size: 3vw;
+    align-self: end;
+    font-family: 'VT323', monospace;
 }
 
 .hour {
-    top: 10;
+    margin-right: 0.5vw;
+    margin-top: -0.5vw;
     justify-self: end;
-    margin-right: 1vw;
-    font-size: 2rem;
-    margin-bottom: -1vw;
+    font-size: 2vw;
+    align-self: start;
+    font-family: 'VT323';
 }
 
-.battery {
-    grid-column-start: 4;
-    grid-row: 1 / span 2;
-    height: 90%;
-    width: 60%;
-    position: relative;
-}
-
-.rectangle {
-    height: 80%;
-    width: 1.5vw;
-    background-color: transparent;
-    border: 3px solid black;
-    margin-top: 1vw;
-    position: relative;
-    /* Add position relative to the rectangle */
-}
-
-.square {
-    position: absolute;
-    align-content: end;
-    left: 33%;
-    height: 0.5vw;
-    width: 0.6vw;
-    background-color: black;
-    margin-top: 0.5vw;
-}
-
-.rectangle-red {
-    position: absolute;
-    margin-top: -0.9vw;
-    height: 0.6vw;
-    margin-left: 0.3vw;
-    width: 1.2vw;
-    background-color: red;
-    animation: blink 3s infinite alternate;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.line {
+/* .line {
     margin-bottom: 0.5vw;
     align-self: end;
     margin-left: 0.5vw;
     width: 95%;
     height: 20%;
     background-color: #000;
-}
+} */
 
 .grid {
     display: grid;
