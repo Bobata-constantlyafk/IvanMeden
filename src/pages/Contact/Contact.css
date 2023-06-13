@@ -2,7 +2,6 @@
     position: relative;
     max-width: 40vw;
     max-height: 40vw;
-    margin: 0 auto;
     border: 3px solid white;
     align-self: center;
 }
@@ -31,12 +30,13 @@
 
 .header {
     padding-top: 0.5vw;
+    padding-bottom: 0.2vw;
     display: grid;
     grid-template-columns: 1fr 2fr 8fr 1fr;
     background-color: #6eaf41;
     background-size: 8px 8px;
     z-index: -1;
-    border-bottom: solid 2px black;
+    border-bottom: solid 0.2vw black;
 }
 
 .header::before {
@@ -52,12 +52,11 @@
 .signal-top {
     margin-left: 0.5vw;
     grid-column-start: 1;
-    /* grid-row: 1 / span 2; */
   }
 
   .signal-img {
     width: 130%;
-    height: 80%; /* Set the height to 100% to span the entire parent */
+    height: 80%;
   }
 
 .signal-bot {
@@ -69,6 +68,7 @@
     font-size: 3vw;
     align-self: end;
     font-family: 'VT323', monospace;
+    white-space: nowrap;
 }
 
 .hour {
@@ -80,20 +80,11 @@
     font-family: 'VT323';
 }
 
-/* .line {
-    margin-bottom: 0.5vw;
-    align-self: end;
-    margin-left: 0.5vw;
-    width: 95%;
-    height: 20%;
-    background-color: #000;
-} */
-
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5vw;
-    padding: 0.5vw;
+    padding: 1.5vw;
 }
 
 .grid-item {
@@ -107,28 +98,102 @@
 .icon {
     align-self: center;
     justify-self: center;
-    height: 70%;
-    width: 70%;
-    /* border: 1px solid yellow; */
-}
-
-.phone {
-    height: 70%;
-    width: 70%;
+    height: 7vw;
+    width: 7vw;
 }
 
 .fb {
-    height: 90%;
-    width: 90%;
-    border: 0;
+    height: 9vw;
+    width: 9vw;
+
 }
 
 .email {
-    height: 100%;
-    width: 100%;
+    height: 9.5vw;
+    width: 9.5vw;
 }
 
 .link {
+    height: 8vw;
+    width: 8vw;
     text-decoration: none;
     color: white;
 }
+
+.icon-text{
+    font-size: 1.7vw;
+    font-family: 'VT323', monospace;
+    margin-top: 0;
+    color: #fff;
+}
+
+.icon-text-email{
+    margin-top: -1.5vw;
+}
+
+.grid-icon-email{
+    margin-top: -1vw;
+}
+
+.icon-text-fb{
+    margin-top: -1vw;
+}
+
+.grid-icon-twitter{
+    margin-bottom: -1.5vw;
+}
+
+.phone-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 25vw;
+    height: 20vw;
+    background-color: #6eaf41;
+    color: white;
+    border-radius: 8px;
+    font-family: 'VT323', monospace;
+  }
+  
+  .phone-modal h1{
+    margin-top: 1vw;
+    font-size: 3.5vw;
+    margin-bottom: 0;
+  }
+
+  .phone-modal p{
+    margin-top: 0;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .phone-modal-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+
+  .phone-modal-buttons button {
+    border:groove;
+    background-color: #6eaf41;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 3vw;
+    padding: 0.2vw;
+    outline: 1vw;
+    cursor: pointer;
+    image-rendering: pixelated;
+    margin-bottom: 1vw;
+  }
+
+  .copy-button{
+    background-color: #5391B0 !important;
+}
+
+
+  
