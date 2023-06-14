@@ -24,20 +24,35 @@ function Contact() {
     return () => clearInterval(timer);
   }, []);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPhoneModalOpen, setIsPhoneModalOpen] = useState(false);
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
+  const openPhoneModal = () => {
+    setIsPhoneModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closePhoneModal = () => {
+    setIsPhoneModalOpen(false);
+  };
+
+  const openEmailModal = () => {
+    setIsEmailModalOpen(true);
+  };
+
+  const closeEmailModal = () => {
+    setIsEmailModalOpen(false);
   };
 
   const copyPhoneNumber = () => {
     const phoneNumberElement = document.getElementById("phoneNumber");
     const phoneNumber = phoneNumberElement.textContent;
     navigator.clipboard.writeText(phoneNumber);
+  };
+
+  const copyEmail = () => {
+    const emailElement = document.getElementById("email");
+    const email = emailElement.textContent;
+    navigator.clipboard.writeText(email);
   };
 
   return (
@@ -87,12 +102,26 @@ function Contact() {
 
           <div className="grid">
             <div className="grid-icon">
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer">
-                <img className="phone icon" src={phone} alt="phone" />
-              </a>
+              <img
+                className="phone icon"
+                src={phone}
+                alt="phone"
+                onClick={openPhoneModal}
+              />
+              <ReactModal
+                className="contact-modal"
+                isOpen={isPhoneModalOpen}
+                onRequestClose={closePhoneModal}
+                contentLabel="Modal">
+                <h1 id="phoneNumber">+45 91 84 16 59</h1>
+                <p>Feel free to call me any day between 11 and 18 o'clock</p>
+                <div className="contact-modal-buttons">
+                  <button className="copy-button" onClick={copyPhoneNumber}>
+                    Copy
+                  </button>
+                  <button onClick={closePhoneModal}>Close</button>
+                </div>
+              </ReactModal>
               <p className="icon-text">Call me</p>
             </div>
 
@@ -101,21 +130,20 @@ function Contact() {
                 className="icon email"
                 src={email}
                 alt="email"
-                onClick={openModal}
+                onClick={openEmailModal}
               />
-
               <ReactModal
-                className="phone-modal"
-                isOpen={isModalOpen}
-                onRequestClose={closeModal}
+                className="contact-modal"
+                isOpen={isEmailModalOpen}
+                onRequestClose={closeEmailModal}
                 contentLabel="Modal">
-                <h1 id="phoneNumber">+45 91 84 16 59</h1>
-                <p>Feel free to call me any day between 11 and 18 o'clock</p>
-                <div className="phone-modal-buttons">
-                  <button className="copy-button" onClick={copyPhoneNumber}>
+                <h1 id="email">van@io</h1>
+                <p>Contact me via email</p>
+                <div className="contact-modal-buttons">
+                  <button className="copy-button" onClick={copyEmail}>
                     Copy
                   </button>
-                  <button onClick={closeModal}>Close</button>
+                  <button onClick={closeEmailModal}>Close</button>
                 </div>
               </ReactModal>
 
