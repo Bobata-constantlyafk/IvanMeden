@@ -29,10 +29,11 @@ function Edits() {
           </Link>
         </div>
 
-        <div className="image-container">
-          <div className="image-container">
-            <img src={ivan} alt="medenka" className="ivan" />
-          </div>
+        <div className="vid-container">
+          <img src={ivan} alt="medenka" className="ivan" />
+          <img src={ivan} alt="medenka" className="ivan" />
+          <img src={ivan} alt="medenka" className="ivan" />
+          <img src={ivan} alt="medenka" className="ivan" />
         </div>
 
         <div className="title">
