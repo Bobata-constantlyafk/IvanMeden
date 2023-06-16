@@ -1,7 +1,9 @@
 import React from "react";
 import "./Edits.css";
 import staticloop from "../../images/static.mp4";
-import vid from "../../images/vid-polaroid.png";
+import lifestyle from "../../images/lifestyle.png";
+import car from "../../images/Car-montage.png";
+import memes from "../../images/meme-edit.png";
 import { Link } from "react-router-dom";
 
 function Edits() {
@@ -30,36 +32,36 @@ function Edits() {
         <div className="scroll-container">
           <div className="videos-container">
             <div className="vid-container">
-              <img src={vid} alt="medenka" className="vid" />
+              <img src={lifestyle} alt="medenka" className="vid" />
               <div className="video-wrapper">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/eveK7v2cX80"
+                  src="https://www.youtube.com/embed/VA8a75_2IUs"
                   title="Embedded YouTube Video"
                   frameBorder="0"
                   allowFullScreen></iframe>
               </div>
             </div>
             <div className="vid-container">
-              <img src={vid} alt="medenka" className="vid" />
+              <img src={car} alt="medenka" className="vid" />
               <div className="video-wrapper">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/eveK7v2cX80"
+                  src="https://www.youtube.com/embed/g4R13Oxs61U"
                   title="Embedded YouTube Video"
                   frameBorder="0"
                   allowFullScreen></iframe>
               </div>
             </div>
             <div className="vid-container">
-              <img src={vid} alt="medenka" className="vid" />
+              <img src={memes} alt="medenka" className="vid" />
               <div className="video-wrapper">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/eveK7v2cX80"
+                  src="https://www.youtube.com/embed/6cmg75bgkkg"
                   title="Embedded YouTube Video"
                   frameBorder="0"
                   allowFullScreen></iframe>
@@ -71,7 +73,8 @@ function Edits() {
         <div className="title-edit">
           <h1 className="medec">
             IVAN <br />
-            MEDEN <br /> .COM
+            MEDEN <br />
+            .COM
           </h1>
         </div>
       </div>

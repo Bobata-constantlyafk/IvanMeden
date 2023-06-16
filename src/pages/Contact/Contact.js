@@ -137,7 +137,11 @@ function Contact() {
                 isOpen={isEmailModalOpen}
                 onRequestClose={closeEmailModal}
                 contentLabel="Modal">
-                <h1 id="email">van@io</h1>
+                <h1 id="email" className="email-modal-text">
+                  ivanmednikarov
+                  <br />
+                  @gmail.com
+                </h1>
                 <p>Contact me via email</p>
                 <div className="contact-modal-buttons">
                   <button className="copy-button" onClick={copyEmail}>
