@@ -31,11 +31,11 @@
 
 .tape {
     position: absolute;
-    height: 6%;
-    top: 4.2vw;
-    left: 50%;
+    height: 8%;
+    top: 2.4vw;
+    left: 49%;
     transform: translateX(-50%);
-    opacity: 96%;
+    opacity: 100%;
 }
 
 .text {

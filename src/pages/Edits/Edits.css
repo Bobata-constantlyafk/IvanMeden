@@ -1,38 +1,82 @@
 .whole-page {
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-.da-grid {
+  }
+  
+  .da-grid-edit {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 100vh;
+  }
+  
+  .menu-edit {
+    position: sticky;
+    bottom: 0;
+    align-self: flex-end;
+    color: white;
+    text-align: left;
+    font-size: 1.8vw;
+    font-family: 'Roboto mono', 'DJGROSS', 'Hacked';
+    margin-left: 1vw;
+    font-weight: 100;
+    z-index: 1;
+  }
+  
+  .title-edit {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    color: white;
+    font-family: 'DJGROSS';
+    text-align: end;
+    text-shadow: -8px -8px 0 blue, 8px -8px 0 red, -8px 8px 0 red, 8px 8px 0 red;
+    margin-right: 2vw;
+    margin-top: -2vw;
+  }
+  
+  .scroll-container {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
+  
+  .videos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+  }
+  
+  .vid-container {
+    position: relative;
+    width: 33vw;
+    height: 33vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+  }
+  
+  .vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+  }
+  
+  .video-wrapper {
+    position: absolute;
+    top: 10%;
+    left: 4.9%;
+    width: 90%;
+    height: 85%;
+  }
+  
+  .video-wrapper iframe {
+    width: 98%;
+    height: 83%;
+  }
+
+  .menu-edit h2.current::before {
+    content: "/";
+    animation: caretAnimation 1s infinite;
 }
-
-.vid-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: end;
-}
-
-.ivan {
-    max-width: 80%;
-    max-height: 80%;
-}
-
-
-@keyframes caretAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
+  

@@ -10,7 +10,7 @@ import lin from "../../images/lin.png";
 import phone from "../../images/phone-g.png";
 import email from "../../images/email.png";
 import bird from "../../images/bird.png";
-import battery from "../../images/battery.mp4";
+import battery from "../../images/battery-1.mp4";
 import signal from "../../images/signal.png";
 
 function Contact() {
@@ -67,9 +67,9 @@ function Contact() {
           <Link className="link" to="/">
             <h2>HOME</h2>
           </Link>
-          <h2>
-            <s class="strikethrough">EDITS</s>
-          </h2>
+          <Link className="link" to="/edits">
+            <h2>EDITS</h2>
+          </Link>
           <Link className="link" to="/contact">
             <h2 className="current">CONTACT</h2>
           </Link>
