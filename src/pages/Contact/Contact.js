@@ -10,7 +10,7 @@ import lin from "../../images/lin.png";
 import phone from "../../images/phone-g.png";
 import email from "../../images/email.png";
 import bird from "../../images/bird.png";
-import battery from "../../images/battery-1.mp4";
+import battery from "../../images/battery.mp4";
 import signal from "../../images/signal.png";
 
 function Contact() {

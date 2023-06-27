@@ -1,6 +1,6 @@
 import './Home.css';
 import staticloop from '../../images/static.mp4';
-import ivan from "../../images/home-page-pic.png";
+import ivan from "../../images/home-page-pic-1.png";
 import { Link } from "react-router-dom";
 
 function Home() {
