@@ -62,3 +62,51 @@
     text-decoration: none;
     color: white;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .torn-sheet {
+        order: -1;
+      }
+
+      .paper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150vw;
+        width: 85vw;
+        background: white;
+        background: linear-gradient(to right, transparent 0, transparent 1vw, white 1vw);
+        }
+
+    .text {
+        line-height: 8vw;
+        color: black;
+        font-size: 5vw;
+        text-align: left;
+        overflow: hidden;
+        outline: none;
+        margin-left: 1vw;
+        margin-right: 1.5vw;
+        font-family: 'Rock Salt', 'Courier New', Courier, monospace;
+    }
+
+    .text h2 {
+        font-size: 10vw;
+    }
+
+    .lines {
+        height: calc(100% - 10vw);
+        background-image: repeating-linear-gradient(white 0px, white 7.9vw, black 8vw);
+    }
+
+    .tape {
+        position: absolute;
+        height: 8%;
+        top: 80vw;
+        left: 49%;
+        transform: translateX(-50%);
+        opacity: 100%;
+    }
+    
+  }

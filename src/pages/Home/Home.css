@@ -122,3 +122,35 @@
     text-decoration: none;
     color: white;
 }
+
+@media only screen and (max-width: 767px) {
+    .da-grid {
+        display: grid;
+        grid-template-columns: none;
+        justify-content: center;
+    }
+
+    .image-container {
+        order: -1;
+      }
+    
+      .title {
+        order: -2;
+      }
+      .medec{
+        font-size: 15vw;
+        text-align: center;
+      }
+
+      .ivan {
+        width: 70vw;
+    }
+
+    .menu {
+        text-align: center;
+        font-size: 5vw;
+    }
+    .menu h2.current::before {
+        content: none;
+    }
+  }
