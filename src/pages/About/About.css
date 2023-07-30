@@ -67,6 +67,8 @@
 
     .torn-sheet {
         order: -1;
+        margin-top: 15vw;
+        margin-bottom: 15vw;
       }
 
       .paper {
@@ -80,13 +82,13 @@
         }
 
     .text {
-        line-height: 8vw;
+        line-height: 8.1vw;
         color: black;
         font-size: 5vw;
         text-align: left;
         overflow: hidden;
         outline: none;
-        margin-left: 1vw;
+        margin-left: 0vw;
         margin-right: 1.5vw;
         font-family: 'Rock Salt', 'Courier New', Courier, monospace;
     }
@@ -96,17 +98,12 @@
     }
 
     .lines {
-        height: calc(100% - 10vw);
-        background-image: repeating-linear-gradient(white 0px, white 7.9vw, black 8vw);
+        height: calc(100% - 5vw);
+        background-image: repeating-linear-gradient(white 0px, white 8vw, black 8.1vw);
     }
 
     .tape {
-        position: absolute;
-        height: 8%;
-        top: 80vw;
-        left: 49%;
-        transform: translateX(-50%);
-        opacity: 100%;
-    }
+        display: none;
+      }
     
   }

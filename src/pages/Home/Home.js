@@ -26,9 +26,11 @@ function Home() {
             <h2>ABOUT</h2>
           </Link>
         </div>
+
         <div className="image-container">
           <img src={ivan} alt="medenka" className="ivan" />
         </div>
+
         <div className="title">
           <h1 className="medec">
             IVAN <br />

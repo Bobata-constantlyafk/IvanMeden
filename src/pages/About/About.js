@@ -28,6 +28,7 @@ function About() {
             <h2 className="current">ABOUT</h2>
           </Link>
         </div>
+
         <div className="torn-sheet">
           <div className="paper">
             <img className="tape" src={tapeImage} alt="Tape" />
@@ -35,17 +36,18 @@ function About() {
             <div className="lines">
               <div className="text" contentEditable spellCheck="false">
                 <h2>Who Am I?</h2>
-                Hey there, folks! The name is Ivan Mednikarov, I am video editor
-                for hire!
+                Hey there, folks! The name is Ivan Mednikarov, I am video
+                editor&nbsp; for&nbsp; hire!
               </div>
               <div className="text text-2" contentEditable spellCheck="false">
-                <h2>Why I edit?</h2>I am dedicated to mastering editing by
-                taking on diverse video styles. So hit me up with your ideas.
-                The crazier the better!
+                <h2>Why I edit?</h2>I am dedicated to mastering&nbsp;
+                editing&nbsp; by taking on diverse video styles. So hit me up
+                with your&nbsp; ideas. The crazier the better!
               </div>
             </div>
           </div>
         </div>
+
         <div className="title">
           <h1 className="medec">
             IVAN <br />
