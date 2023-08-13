@@ -10,7 +10,7 @@ import lin from "../../images/lin.png";
 import phone from "../../images/phone-g.png";
 import email from "../../images/email.png";
 import bird from "../../images/bird.png";
-import battery from "../../images/battery.mp4";
+import battery from "../../images/battery-green.mp4";
 import signal from "../../images/signal.png";
 
 function Contact() {
@@ -181,7 +181,7 @@ function Contact() {
                 rel="noopener noreferrer">
                 <img className="lin icon" src={lin} alt="lin" />
               </a>
-              <p className="icon-text">My LinkedIn</p>
+              <p className="icon-text icon-text-lin">My LinkedIn</p>
             </div>
 
             <div className="grid-icon-email">
