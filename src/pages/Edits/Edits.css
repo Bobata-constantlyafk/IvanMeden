@@ -17,7 +17,6 @@
     font-family: 'Roboto mono', 'DJGROSS', 'Hacked';
     margin-left: 1vw;
     font-weight: 100;
-    z-index: 1;
   }
   
   .title-edit {
@@ -78,5 +77,53 @@
   .menu-edit h2.current::before {
     content: "/";
     animation: caretAnimation 1s infinite;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .da-grid-edit {
+    display: grid;
+    grid-template-columns: none;
+    justify-content: center;
+  }
+
+  .scroll-container{
+    order: -1;
+  }
+
+  .title-edit {
+    order: -2;
+    align-self: center;
+    position:static;
+  }
+
+  .menu-edit {
+    text-align: center;
+    font-size: 5vw;
+    align-self: end;
+    justify-self: center;
+    position:static;
+    margin-top: 10vw;
+  }
+
+  .menu-edit h2.current::before {
+      content: none;
+  }
+
+  .vid-container {
+    position: relative;
+    width: 70vw;
+    height: 70vw;
+    margin-top: 20vw;
+    margin-bottom: 1vw;
+  }
+
+  .scroll-container {
+    overflow-y:hidden;
+    scroll-behavior:unset;
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
+
 }
   
