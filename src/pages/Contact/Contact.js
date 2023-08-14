@@ -2,7 +2,7 @@ import "./Contact.css";
 import React, { useEffect, useState } from "react";
 import ReactModal from "react-modal";
 import { Link } from "react-router-dom";
-import staticloop from "../../images/static.mp4";
+import staticloop from "../../images/static.webm";
 import ig from "../../images/ig.png";
 import fb from "../../images/fb.png";
 import yt from "../../images/yt.png";
@@ -10,7 +10,7 @@ import lin from "../../images/lin.png";
 import phone from "../../images/phone-g.png";
 import email from "../../images/email.png";
 import bird from "../../images/bird.png";
-import battery from "../../images/battery-green.mp4";
+import battery from "../../images/battery-green.webm";
 import signal from "../../images/signal.png";
 
 function Contact() {
