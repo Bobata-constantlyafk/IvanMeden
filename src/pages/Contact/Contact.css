@@ -68,6 +68,7 @@
     font-size: 3vw;
     align-self: end;
     font-family: 'VT323', monospace;
+    font-display: swap;
     white-space: nowrap;
 }
 

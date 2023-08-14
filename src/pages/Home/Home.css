@@ -57,20 +57,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .ivan {
     width: 35vw;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    height: 43vw;
 }
 
 .title {
     align-self: start;
     color: white;
     font-family: 'DJGROSS';
+    font-display: swap;
     text-align: end;
     text-shadow:
         -8px -8px 0 blue,
@@ -86,7 +84,8 @@
     color: white;
     text-align: left;
     font-size: 1.8vw;
-    font-family: 'Roboto mono', 'DJGROSS', 'Hacked';
+    font-family: 'Roboto mono';
+    font-display: swap;
     margin-left: 1vw;
     font-weight: 100;
 }
@@ -136,6 +135,7 @@
     
       .title {
         order: -2;
+        margin-bottom: 10vw;
       }
       .medec{
         font-size: 15vw;
@@ -149,8 +149,15 @@
     .menu {
         text-align: center;
         font-size: 5vw;
+
     }
     .menu h2.current::before {
         content: none;
+    }
+    .ivan{
+        width: 85vw;
+        height: 100vw;
+        margin-top: 25vw;
+        margin-bottom: 25vw;
     }
   }

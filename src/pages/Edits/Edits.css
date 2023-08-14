@@ -15,6 +15,7 @@
     text-align: left;
     font-size: 1.8vw;
     font-family: 'Roboto mono', 'DJGROSS', 'Hacked';
+    font-display: swap;
     margin-left: 1vw;
     font-weight: 100;
   }
@@ -25,6 +26,7 @@
     align-self: flex-start;
     color: white;
     font-family: 'DJGROSS';
+    font-display: swap;
     text-align: end;
     text-shadow: -8px -8px 0 blue, 8px -8px 0 red, -8px 8px 0 red, 8px 8px 0 red;
     margin-right: 2vw;
@@ -89,6 +91,8 @@
 
   .scroll-container{
     order: -1;
+    margin-bottom: 20vw;
+    margin-top: 10vw;
   }
 
   .title-edit {

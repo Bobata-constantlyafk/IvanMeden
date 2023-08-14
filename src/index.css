@@ -13,13 +13,6 @@ code {
 }
 
 @font-face {
-  font-family: 'Broken15';
-  src: url('assets/BROKEN15.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'DJGROSS';
   src: url('assets/DJGROSS.ttf') format('truetype');
   font-weight: normal;
