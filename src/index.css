@@ -22,7 +22,7 @@ code {
 
 @font-face {
   font-family: 'Rock Salt';
-  src: url('https://fonts.gstatic.com/s/rocksalt/v12/7Auwp_0qiz-afTUGe6BHiVM9iA.woff2') format('woff2');
+  src: url('assets/RockSalt-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
