@@ -17,4 +17,17 @@ code {
   src: url('assets/DJGROSS.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rock Salt';
+  src: url('https://fonts.gstatic.com/s/rocksalt/v12/7Auwp_0qiz-afTUGe6BHiVM9iA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.special-text {
+  font-family: 'Rock Salt', cursive;
 }
