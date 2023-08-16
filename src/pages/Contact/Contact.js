@@ -3,15 +3,15 @@ import React, { useEffect, useState } from "react";
 import ReactModal from "react-modal";
 import { Link } from "react-router-dom";
 import staticloop from "../../images/static.webm";
-import ig from "../../images/ig.png";
-import fb from "../../images/fb.png";
-import yt from "../../images/yt.png";
-import lin from "../../images/lin.png";
-import phone from "../../images/phone-g.png";
-import email from "../../images/email.png";
-import bird from "../../images/bird.png";
+import ig from "../../images/ig.webp";
+import fb from "../../images/fb.webp";
+import yt from "../../images/yt.webp";
+import lin from "../../images/lin.webp";
+import phone from "../../images/phone-g.webp";
+import email from "../../images/email.webp";
+import bird from "../../images/bird.webp";
 import battery from "../../images/battery-green.webm";
-import signal from "../../images/signal.png";
+import signal from "../../images/signal.webp";
 
 function Contact() {
   const [currentTime, setCurrentTime] = useState(new Date());

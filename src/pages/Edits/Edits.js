@@ -1,9 +1,9 @@
 import React from "react";
 import "./Edits.css";
 import staticloop from "../../images/static.webm";
-import lifestyle from "../../images/lifestyle.png";
-import car from "../../images/Car-montage.png";
-import memes from "../../images/meme-edit.png";
+import lifestyle from "../../images/lifestyle.webp";
+import car from "../../images/Car-montage.webp";
+import memes from "../../images/meme-edit.webp";
 import { Link } from "react-router-dom";
 
 function Edits() {

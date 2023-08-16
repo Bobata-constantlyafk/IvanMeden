@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css'
 import staticloop from "../../images/static.webm";
-import tornPaper from "../../images/paper.png";
-import tapeImage from "../../images/tape1.png";
+import tornPaper from "../../images/paper.webp";
+import tapeImage from "../../images/tape1.webp";
 
 function About() {
   return (
