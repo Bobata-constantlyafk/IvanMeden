@@ -143,8 +143,8 @@
       }
 
       .ivan {
-        width: 70vw;
-    }
+        aspect-ratio: 1 / 1;
+    }   
 
     .menu {
         text-align: center;
