@@ -37,7 +37,7 @@ function Edits() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/VA8a75_2IUs"
+                  src="https://www.youtube.com/watch?v=PeNXyN-l2Vg"
                   title="Embedded YouTube Video"
                   frameBorder="0"
                   allowFullScreen></iframe>
